@@ -3,12 +3,16 @@
   "description": "CustomerUserConnector module",
   "license": "proprietary",
   "require": {
-    "spryker/user": "^3.0.0"
+    "spryker/user": "^3.0.0",
+    "spryker/kernel": "^3.0.0"
   },
   "require-dev": {
     "spryker/code-sniffer": "*",
     "spryker/propel": "^3.0.0",
     "spryker/testify": "*"
+  },
+  "suggest": {
+    "spryker/customer": "If you want to have customers"
   },
   "autoload": {
     "psr-4": {
