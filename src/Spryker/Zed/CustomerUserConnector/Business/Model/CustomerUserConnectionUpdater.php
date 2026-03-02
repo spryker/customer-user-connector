@@ -17,9 +17,6 @@ class CustomerUserConnectionUpdater implements CustomerUserConnectionUpdaterInte
      */
     protected $customerQueryContainer;
 
-    /**
-     * @param \Spryker\Zed\CustomerUserConnector\Dependency\QueryContainer\CustomerUserConnectorToCustomerQueryContainerInterface $customerQueryContainer
-     */
     public function __construct(CustomerUserConnectorToCustomerQueryContainerInterface $customerQueryContainer)
     {
         $this->customerQueryContainer = $customerQueryContainer;

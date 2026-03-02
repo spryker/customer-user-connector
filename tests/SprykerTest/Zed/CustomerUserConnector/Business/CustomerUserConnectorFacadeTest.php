@@ -31,9 +31,6 @@ class CustomerUserConnectorFacadeTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testUpdateCustomerUserConnectionUpdatesCustomers(): void
     {
         // Assign
@@ -61,9 +58,6 @@ class CustomerUserConnectorFacadeTest extends Unit
         $this->assertEquals($expectedAssignedCustomerIds, $actualAssignedCustomerIds);
     }
 
-    /**
-     * @return \Spryker\Zed\CustomerUserConnector\Business\CustomerUserConnectorFacadeInterface
-     */
     protected function getFacade(): CustomerUserConnectorFacadeInterface
     {
         return $this->tester->getLocator()->customerUserConnector()->facade();
